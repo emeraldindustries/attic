@@ -1,5 +1,3 @@
-## 📄 `docs/CONTRIBUTING.md`
-
 # Contributing to Emerald Attic
 
 Thanks for considering a contribution! This repo collects small, one‑off utilities published **as‑is** (see the [Support policy](./SUPPORT.md)). PRs are welcome, but reviews/merges aren’t guaranteed.
