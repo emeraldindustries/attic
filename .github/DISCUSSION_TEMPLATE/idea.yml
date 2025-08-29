@@ -1,0 +1,16 @@
+name: "Idea: Proposal or Improvement"
+description: Share a small proposal or a tweak.
+labels: [idea]
+title: "[Idea] <one-liner>"
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: Problem / why, description: "What pain does this solve?" }
+    validations: { required: true }
+  - type: textarea
+    id: pitch
+    attributes: { label: Proposal, description: "What would you change or add?" }
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes: { label: Scope, description: "Small change? New tool? Docs?" }

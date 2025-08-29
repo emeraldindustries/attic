@@ -1,0 +1,15 @@
+name: "Show & Tell"
+description: Demos, tips, before/after screenshots—show what you built!
+labels: [show-and-tell]
+title: "[Demo] <thing you made>"
+body:
+  - type: textarea
+    id: summary
+    attributes: { label: Summary, description: "What is it? Why is it cool?" }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: How to try it, render: bash }
+  - type: textarea
+    id: media
+    attributes: { label: Screenshots / links }

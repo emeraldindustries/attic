@@ -1,0 +1,14 @@
+name: Convert “question” issues to Discussions (gentle)
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  call:
+    uses: emeraldindustries/.github/.github/workflows/route-to-discussions.yml@main
+    with:
+      qna_url: https://github.com/emeraldindustries/attic/discussions/categories/q-a
+    secrets: inherit

@@ -1,0 +1,59 @@
+name: "Q&A (Help / How-to / Troubleshooting)"
+description: Ask a question or get help reproducing an issue.
+title: "[Q] <concise question>"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for reaching out! Please include **exact commands**, **versions**, and redact secrets.
+  - type: input
+    id: area
+    attributes:
+      label: Tool or area
+      description: Path or name of the script/tool you're using.
+      placeholder: tools/github/retarget-remotes.sh
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS & version
+      placeholder: "macOS 14.6 / Ubuntu 22.04"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Tool versions
+      description: e.g., bash, git, gh (or other relevant CLIs)
+      placeholder: "bash 5.2, git 2.46, gh 2.60"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / commands
+      description: Paste the **exact commands** you ran and any relevant flags/config.
+      render: bash
+      placeholder: |
+        # example
+        ./tools/github/retarget-remotes.sh --org emeraldindustries
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened (error/output)
+      render: text
+      placeholder: |
+        error: <full message>
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context
+      description: Logs, links, screenshots (drag & drop). Remove secrets.
+
