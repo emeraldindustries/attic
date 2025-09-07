@@ -1,9 +1,23 @@
-name: "Announcement (maintainers)"
-description: Maintainer notes, releases, deprecations.
-labels: [announcement]
+# Discussion template for announcements
 title: "[Announce] <topic>"
+labels: [announcement]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Announcement
+
   - type: textarea
     id: note
-    attributes: { label: Note }
-    validations: { required: true }
+    attributes:
+      label: Notes
+      description: What is new, changed, or deprecated.
+      placeholder: Brief summary…
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Optional longer description / links / migration notes.
